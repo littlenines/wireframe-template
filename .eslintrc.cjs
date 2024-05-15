@@ -17,5 +17,11 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'arrow-spacing': ['warn', { 'before': true, 'after': true }],
+    'block-spacing': 'warn',
+    'brace-style': ['warn', '1tbs', { 'allowSingleLine': true }],
+    'indent': ['warn', 2 ],
+    'no-multiple-empty-lines': ['warn', {'max': 2}],
+    'quotes': ['warn', 'single']
   },
 }

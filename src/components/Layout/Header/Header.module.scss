@@ -1,0 +1,55 @@
+@use "src/style/variables" as *;
+
+.header {
+  background-color: $light;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-shadow: $shadow;
+  position: sticky;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+
+  .logo {
+    width: 50px;
+    object-fit: cover;
+    margin-right: 16px;
+  }
+}
+
+.menu {
+  background-color: $dark;
+  border-radius: 4px;
+  display: flex;
+  padding: 4px;
+  cursor: pointer;
+
+  img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.highlight {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.highlight_button {
+  cursor: pointer;
+  background-color: $dark;
+  text-transform: uppercase;
+  color: $light;
+  border-radius: 24px;
+  border: none;
+  padding: 8px 16px;
+}
