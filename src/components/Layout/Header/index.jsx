@@ -1,3 +1,4 @@
+import Button from 'src/components/Button';
 import style from './Header.module.scss';
 
 const Header = () => {
@@ -10,9 +11,7 @@ const Header = () => {
             <img src="icons/menu.svg" alt="menu" />
           </div>
         </div>
-        <div className={style.highlight}>
-          <button className={style.highlight_button}>Start now</button>
-        </div>
+        <Button />
       </div>
     </header>
   )
