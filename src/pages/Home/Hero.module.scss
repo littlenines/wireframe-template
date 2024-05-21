@@ -1,5 +1,5 @@
 @use "src/style/variables" as *;
-
+// HERO
 .hero {
     background-image: url('img/default-img.svg');
     background-repeat: no-repeat;
@@ -13,6 +13,12 @@
 }
 
 .content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.text_content {
+    margin-bottom: 40px;
 }
 
 h1 {
@@ -26,4 +32,67 @@ p {
     font-weight: 400;
     line-height: 1.55;
     color: $info;
+}
+// FEATURES
+.features_title {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1.22;
+}
+
+.feature_cards {
+    display: grid;
+    align-items: flex-start;
+}
+.card { // make component
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    padding: 16px;
+    // border: 1px solid red;
+}
+
+.icon { // make component
+    background-color: $background-fill;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 24px;
+
+    img {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        min-height: 36px;
+    }
+}
+
+.content_title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.55;
+    margin-bottom: 24px;
+}
+
+.content_description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: $info;
+}
+
+
+
+@media(min-width: 1024px) {
+    // HERo
+    .hero {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .content {
+        width: 65%;
+        margin: 0 auto;
+    }
 }
