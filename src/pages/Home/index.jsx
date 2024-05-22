@@ -1,3 +1,4 @@
+import Section from 'src/components/Section';
 import Button from 'src/components/Button';
 import style from './Hero.module.scss';
 
@@ -21,8 +22,40 @@ const Home = () => {
           <Button size="large" />
         </div>
       </section>
+      <Section title='Which are the greatest things about it?'>
+        <div className={style.feature_cards}>
+            
+          <div className={style.card}>
+            <div className={style.icon}>
+              <img src="icons/lightbulb.svg" alt="lightbulb" />
+            </div>
+            <div className={style.card_content}>
+              <h3 className={style.content_title}>Feature One</h3>
+              <p className={style.content_description}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                  diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+              </p>
+            </div>
+          </div>
 
-      <section className="features">
+          <div className={style.card}>
+            <div className={style.icon}>
+              <img src="icons/lightbulb.svg" alt="lightbulb" />
+            </div>
+            <div className={style.card_content}>
+              <h3 className={style.content_title}>Feature One</h3>
+              <p className={style.content_description}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                  diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* <section className="features">
         <div className="container">
           <h2 className={style.features_title}>Which are the greatest things about it?</h2>
           <div className={style.feature_cards}>
@@ -56,7 +89,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };

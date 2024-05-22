@@ -1,0 +1,12 @@
+@use "src/style/variables" as *;
+
+.title {
+    text-align: center;
+    margin-bottom: $mr-lg;
+}
+
+.description {
+    text-align: center;
+    color: $info;
+    margin-bottom: $mr-xl;
+}
