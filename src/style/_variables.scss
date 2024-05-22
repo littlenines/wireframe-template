@@ -1,6 +1,64 @@
+/*
+- 1.Colors
+- 2.Shadow
+- 3.Margin
+- 4.Padding
+- 5.Typography
+- 6.Border
+- 7.MediaQuery
+*/
+
+// 1.Colors
 $dark: #000;
 $light: #fff;
 $background-fill: #D9D9D9;
 $info: #999;
 
+// 2.Shadow
 $shadow: 5px 5px 10px 0px #b9b9b9;
+
+// 3.Margin
+$mr-xxs: 4px;
+$mr-xs: 8px;
+$mr-sm: 16px;
+$mr-md: 24px;
+$mr-lg: 32px;
+$mr-xl: 40px;
+$mr-xxl: 80px;
+
+// 4.Padding
+$pd-xxs: 4px;
+$pd-xs: 8px;
+$pd-sm: 16px;
+$pd-md: 24px;
+$pd-lg: 32px;
+$pd-xl: 40px;
+$pd-xxl: 80px;
+
+// 5.Typography
+$font-sm: 1.6rem;
+$font-md: 1.8rem;
+$font-lg: 2.4rem;
+$font-xl: 4.8rem;
+
+$font-light: 400;
+$font-bold: 700;
+
+$line-sm: 1.22;
+$line-md: 1.55;
+
+$family-base: 'Raleway', sans-serif;
+$family-primary: 'Montserrat', sans-serif;
+$family-secondary: 'Roboto', sans-serif;
+
+// 6.Border
+$border-sm: 2px;
+$border-md: 4px;
+$border-lg: 8px;
+$border-circle: 50%;
+
+// 7.MediaQuery
+$sm: 479px;
+$md: 767px;
+$lg: 991px;
+$xl: 1200px;
