@@ -1,0 +1,16 @@
+@use "src/style/variables" as *;
+
+.card {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    padding: 16px;
+}
+
+.card_title {
+    margin-bottom: 24px;
+}
+
+.card_description {
+    color: $info;
+}

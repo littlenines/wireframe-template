@@ -1,11 +1,14 @@
-import Section from 'src/components/Section';
-import Button from 'src/components/Button';
+import { lazy } from 'react';
+const Section = lazy(() => import('src/components/Section'));
+const Button = lazy(() => import('src/components/Button'));
+const FeatureCard = lazy(() => import('src/components/FeatureCard'));
 import style from './Hero.module.scss';
 
 const Home = () => {
   return (
     <main>
-      <section className={style.hero}>
+      {/* TODO: Make Hero component */}
+      <section className={style.hero}> 
         <div className={`container ${style.content}`}>
           <h1 className={style.text_content}>
             Tell the whole world about your ideea
@@ -22,74 +25,17 @@ const Home = () => {
           <Button size="large" />
         </div>
       </section>
+      {/* FEATURES */}
       <Section title='Which are the greatest things about it?'>
         <div className={style.feature_cards}>
-            
-          <div className={style.card}>
-            <div className={style.icon}>
-              <img src="icons/lightbulb.svg" alt="lightbulb" />
-            </div>
-            <div className={style.card_content}>
-              <h3 className={style.content_title}>Feature One</h3>
-              <p className={style.content_description}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <FeatureCard title='Feature One' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                  diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-              </p>
-            </div>
-          </div>
-
-          <div className={style.card}>
-            <div className={style.icon}>
-              <img src="icons/lightbulb.svg" alt="lightbulb" />
-            </div>
-            <div className={style.card_content}>
-              <h3 className={style.content_title}>Feature One</h3>
-              <p className={style.content_description}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet.' />
+          <FeatureCard title='Feature One' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                  diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-              </p>
-            </div>
-          </div>
+                  diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet.' />
         </div>
       </Section>
-
-      {/* <section className="features">
-        <div className="container">
-          <h2 className={style.features_title}>Which are the greatest things about it?</h2>
-          <div className={style.feature_cards}>
-            
-            <div className={style.card}>
-              <div className={style.icon}>
-                <img src="icons/lightbulb.svg" alt="lightbulb" />
-              </div>
-              <div className={style.card_content}>
-                <h3 className={style.content_title}>Feature One</h3>
-                <p className={style.content_description}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                  diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-                </p>
-              </div>
-            </div>
-
-            <div className={style.card}>
-              <div className={style.icon}>
-                <img src="icons/lightbulb.svg" alt="lightbulb" />
-              </div>
-              <div className={style.card_content}>
-                <h3 className={style.content_title}>Feature One</h3>
-                <p className={style.content_description}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                  diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </main>
   );
 };
