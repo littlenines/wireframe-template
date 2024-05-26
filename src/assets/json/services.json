@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "title": "Resources",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. ",
+    "link": "https://google.com"
+  },
+  {
+    "id": 1,
+    "title": "Community",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. ",
+    "link": "https://google.com"
+  },
+  {
+    "id": 2,
+    "title": "Newsroom",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. ",
+    "link": "https://google.com"
+  }
+]

@@ -1,0 +1,23 @@
+@use "src/style/variables" as *;
+
+.service_card {
+    display: flex;
+    flex-direction: column;
+    padding: $pd-lg;
+    background-color: $background-fill;
+    border-radius: $border-md;
+    margin-bottom: $mr-lg;
+    
+    h3 {
+        margin-bottom: $mr-lg;
+    }
+
+    p {
+        color: $info;
+        margin-bottom: $mr-lg;
+    }
+
+    a {
+        max-width: fit-content;
+    }
+}
