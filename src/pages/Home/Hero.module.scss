@@ -44,6 +44,14 @@ p {
     display: grid;
 }
 
+// TEAM
+.team_cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 @media(min-width: 1024px) {
     // HERO
     .hero {

@@ -1,10 +1,14 @@
 import { lazy } from 'react';
+
 const Section = lazy(() => import('src/components/Section'));
 const Button = lazy(() => import('src/components/Button'));
 const FeatureCard = lazy(() => import('src/components/FeatureCard'));
 const ServiceCard = lazy(() => import('src/components/ServiceCard'));
+const TeamCard = lazy(() => import('src/components/TeamCard'));
+
 import features from 'src/assets/json/features.json';
 import services from 'src/assets/json/services.json';
+import team from 'src/assets/json/team.json';
 import style from './Hero.module.scss';
 
 const Home = () => {
@@ -52,6 +56,21 @@ const Home = () => {
               title={service.title}
               description={service.description}
               link={service.link}
+            />
+          ))}
+        </div>
+      </Section>
+      {/* TEAM */}
+      <Section
+        title="Meet the Team"
+        description="Lorme ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero."
+      >
+        <div className={style.team_cards}>
+          {team.map((member) => (
+            <TeamCard
+              key={member.id}
+              name={member.name}
+              position={member.position}
             />
           ))}
         </div>

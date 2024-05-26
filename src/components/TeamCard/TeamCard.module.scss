@@ -1,0 +1,17 @@
+@use "src/style/variables" as *;
+
+.team_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $pd-lg;
+    max-width: fit-content;
+
+    img {
+        margin-bottom: $mr-lg;
+    }
+
+    h3 {
+        margin-bottom: $mr-xs;
+    }
+}
