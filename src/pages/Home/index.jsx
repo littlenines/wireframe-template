@@ -2,6 +2,7 @@ import { lazy } from 'react';
 const Section = lazy(() => import('src/components/Section'));
 const Button = lazy(() => import('src/components/Button'));
 const FeatureCard = lazy(() => import('src/components/FeatureCard'));
+import features from 'src/assets/json/features.json';
 import style from './Hero.module.scss';
 
 const Home = () => {
@@ -28,12 +29,7 @@ const Home = () => {
       {/* FEATURES */}
       <Section title='Which are the greatest things about it?'>
         <div className={style.feature_cards}>
-          <FeatureCard title='Feature One' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                  diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet.' />
-          <FeatureCard title='Feature One' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                  diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet.' />
+          {features.map((feature) => <FeatureCard key={feature.id} title={feature.title} description={feature.description}/> )}
         </div>
       </Section>
     </main>
