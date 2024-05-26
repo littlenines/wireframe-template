@@ -75,6 +75,10 @@ const Home = () => {
           ))}
         </div>
       </Section>
+      {/* OUR STORY */}
+      <Section title='Our story' description='Lorme ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.'>
+
+      </Section>
     </main>
   );
 };
