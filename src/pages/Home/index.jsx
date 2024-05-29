@@ -5,6 +5,7 @@ const Button = lazy(() => import('src/components/Button'));
 const FeatureCard = lazy(() => import('src/components/FeatureCard'));
 const ServiceCard = lazy(() => import('src/components/ServiceCard'));
 const TeamCard = lazy(() => import('src/components/TeamCard'));
+const ContentCard = lazy(() => import('src/components/ContentCard'));
 
 import features from 'src/assets/json/features.json';
 import services from 'src/assets/json/services.json';
@@ -12,6 +13,8 @@ import team from 'src/assets/json/team.json';
 import style from './Hero.module.scss';
 
 const Home = () => {
+  const contentDescription = ['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.', 'Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.']
+  
   return (
     <main>
       {/* TODO: Make Hero component */}
@@ -77,7 +80,7 @@ const Home = () => {
       </Section>
       {/* OUR STORY */}
       <Section title='Our story' description='Lorme ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.'>
-
+        <ContentCard title='This text is the name of the article. Lorem ipsum dolor sit metsed do eiusm od tempor.' description={contentDescription}/>
       </Section>
     </main>
   );

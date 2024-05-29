@@ -1,0 +1,29 @@
+@use "src/style/variables" as *;
+
+.content_card {
+border: 1px solid $background-fill;
+border-radius: $border-lg;
+}
+
+.media {
+    height: 200px;
+    background-color: $background-fill;
+    margin-bottom: $mr-md;
+}
+
+.content {
+    padding: 0 $pd-md $pd-md;
+    h3 {
+        margin-bottom: $mr-md;
+    }
+}
+
+.description {
+    p:not(:last-child) {
+        margin-bottom: $mr-xs;
+    }
+
+    p:last-child {
+        margin-bottom: $mr-md;
+    }
+}
