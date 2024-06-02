@@ -80,7 +80,15 @@ const Home = () => {
       </Section>
       {/* OUR STORY */}
       <Section title='Our story' description='Lorme ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.'>
-        <ContentCard title='This text is the name of the article. Lorem ipsum dolor sit metsed do eiusm od tempor.' description={contentDescription}/>
+        <div className={style.our_story}>
+          <ContentCard setClass={style.our_story_video} title='This text is the name of the article. Lorem ipsum dolor sit metsed do eiusm od tempor.' description={contentDescription}/>
+          <div className={style.our_story_images}>
+            <ContentCard title='This text is the name of the article. Lorem ipsum dolor sit metsed ...' imageSrc='img/default-img.svg' />
+            <ContentCard title='This text is the name of the article. Lorem ipsum dolor sit metsed ...' imageSrc='img/default-img.svg' />
+            <ContentCard title='This text is the name of the article. Lorem ipsum dolor sit metsed ...' imageSrc='img/default-img.svg' />
+            <ContentCard title='This text is the name of the article. Lorem ipsum dolor sit metsed ...' imageSrc='img/default-img.svg' />
+          </div>
+        </div>
       </Section>
     </main>
   );

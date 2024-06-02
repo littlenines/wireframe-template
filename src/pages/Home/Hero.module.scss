@@ -52,6 +52,23 @@ p {
     justify-content: center;
 }
 
+// OUR Story
+.our_story_video {
+    margin-bottom: 32px;
+}
+
+.our_story_images {
+    display: grid;
+    row-gap: 32px;
+}
+
+@media(min-width: 479px) {
+    .our_story_images {
+        grid-template-columns:repeat(2, 1fr);
+        column-gap: 24px;
+    }
+}
+
 @media(min-width: 1024px) {
     // HERO
     .hero {
@@ -62,5 +79,14 @@ p {
     .content {
         width: 65%;
         margin: 0 auto;
+    }
+
+    // our story
+    .our_story { // TODO: Fix for desktop version
+        display: flex;
+    }
+
+    .our_story_video {
+        margin-right: 32px;
     }
 }
