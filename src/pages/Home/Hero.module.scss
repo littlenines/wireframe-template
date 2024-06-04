@@ -62,6 +62,14 @@ p {
     row-gap: 32px;
 }
 
+// CONTACT US
+.contact_us {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
 @media(min-width: 479px) {
     .our_story_images {
         grid-template-columns:repeat(2, 1fr);

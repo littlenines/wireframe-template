@@ -6,6 +6,8 @@ const FeatureCard = lazy(() => import('src/components/FeatureCard'));
 const ServiceCard = lazy(() => import('src/components/ServiceCard'));
 const TeamCard = lazy(() => import('src/components/TeamCard'));
 const ContentCard = lazy(() => import('src/components/ContentCard'));
+const FormCard = lazy(() => import('src/components/FormCard'));
+const Info = lazy(() => import('src/components/Info'));
 
 import features from 'src/assets/json/features.json';
 import services from 'src/assets/json/services.json';
@@ -88,6 +90,13 @@ const Home = () => {
             <ContentCard title='This text is the name of the article. Lorem ipsum dolor sit metsed ...' imageSrc='img/default-img.svg' />
             <ContentCard title='This text is the name of the article. Lorem ipsum dolor sit metsed ...' imageSrc='img/default-img.svg' />
           </div>
+        </div>
+      </Section>
+      {/* CONTACT US */}
+      <Section title='Get in touch'>
+        <div className={style.contact_us}>
+          <FormCard />
+          <Info />
         </div>
       </Section>
     </main>

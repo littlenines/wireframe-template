@@ -132,14 +132,14 @@ select {
 }
 
 .section_typography {
-  font-size: $font-md;
+  font-size: $font-sm;
   font-family: $family-base;
   font-weight: $font-light;
   line-height: $line-md;
 }
 
 .anchor_typography {
-  font-size: $font-md;
+  font-size: $font-sm;
   font-family: $family-base;
   font-weight: $font-bold;
   line-height: $line-md;
@@ -147,14 +147,23 @@ select {
 }
 
 .card_heading_typography {
-  font-size: $font-lg;
+  font-size: $font-md;
   font-family: $family-base;
   font-weight: $font-bold;
   line-height: $line-md;
 }
 
+.big_heading_typography {
+  font-size: $font-lg;
+  font-family: $family-primary;
+  font-weight: $font-bold;
+  line-height: $line-md;
+  text-transform: none;
+  text-decoration: none;
+}
+
 .card_text_typography {
-  font-size: $font-sm;
+  font-size: $font-xs;
   font-family: $family-base;
   font-weight: $font-light;
   line-height: $line-md;

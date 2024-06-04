@@ -1,0 +1,18 @@
+// TODO: Clean scss
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Roboto';
+}
+
+.icon_info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
