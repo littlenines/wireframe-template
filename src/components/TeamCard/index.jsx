@@ -8,7 +8,7 @@ const TeamCard = (props) => {
     <div className={style.team_card}>
       <Avatar image={image}/>
       {name && <h3 className='card_heading_typography'>{name}</h3>}
-      {position && <p className='card_text_typography'>{position}</p>}
+      {position && <p className='card_text_typography barely-visible'>{position}</p>}
     </div>
   )
 }

@@ -3,6 +3,7 @@
 - 2.Reset 
 - 3.Containers
 - 4.Typography
+- 5.Colors
 */
 
 // 1.Imports
@@ -170,4 +171,9 @@ select {
   text-transform: none;
   text-decoration: none;
   font-style: normal;
+}
+
+// 5.Colors
+.barely-visible {
+  color: $info;
 }

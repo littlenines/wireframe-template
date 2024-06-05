@@ -1,0 +1,32 @@
+// TODO; Set variables
+.hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.text_content {
+    margin-bottom: 40px;
+}
+
+@media(min-width: 1024px) {
+    .hero {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .content {
+        width: 65%;
+        margin: 0 auto;
+    }
+}

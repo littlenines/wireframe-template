@@ -1,38 +1,5 @@
 @use "src/style/variables" as *;
-// HERO
-.hero {
-    background-image: url('img/default-img.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 40px;
-    width: 100%;
-    text-align: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
 
-.content {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.text_content {
-    margin-bottom: 40px;
-}
-
-h1 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1.22;
-}
-
-p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.55;
-    color: $info;
-}
 // FEATURES
 .feature_cards {
     display: grid;
@@ -78,16 +45,6 @@ p {
 }
 
 @media(min-width: 1024px) {
-    // HERO
-    .hero {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-    .content {
-        width: 65%;
-        margin: 0 auto;
-    }
 
     // our story
     .our_story { // TODO: Fix for desktop version
