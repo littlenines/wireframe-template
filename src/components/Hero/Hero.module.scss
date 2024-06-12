@@ -1,28 +1,29 @@
-// TODO; Set variables
+@use "src/style/variables" as *;
+
 .hero {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-bottom: 40px;
+    margin-bottom: $mr-xl;
     width: 100%;
     text-align: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: $pd-lg;
+    padding-bottom: $pd-lg;
 }
 
 .content {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: $pd-xl;
+    padding-bottom: $pd-xl;
 }
 
 .text_content {
-    margin-bottom: 40px;
+    margin-bottom: $mr-xl;
 }
 
 @media(min-width: 1024px) {
     .hero {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: $pd-xxl;
+        padding-bottom: $pd-xxl;
     }
 
     .content {

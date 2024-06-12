@@ -6,9 +6,9 @@ const TeamCard = (props) => {
   const {image='', name, position} = props
   return (
     <div className={style.team_card}>
-      <Avatar image={image}/>
-      {name && <h3 className='card_heading_typography'>{name}</h3>}
-      {position && <p className='card_text_typography barely-visible'>{position}</p>}
+      <Avatar image={image} setClass={style.team_card_avatar}/>
+      {name && <h3 className={`${style.team_card_title} card_heading_typography`}>{name}</h3>}
+      {position && <p className='card_text_typography barely_visible'>{position}</p>}
     </div>
   )
 }

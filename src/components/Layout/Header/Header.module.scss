@@ -2,8 +2,8 @@
 
 .header {
   background-color: $light;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: $pd-sm;
+  padding-bottom: $pd-sm;
   box-shadow: $shadow;
   position: sticky;
 }
@@ -21,18 +21,18 @@
   .logo {
     width: 50px;
     object-fit: cover;
-    margin-right: 16px;
+    margin-right: $mr-sm;
   }
 }
 
 .menu {
   background-color: $dark;
-  border-radius: 4px;
+  border-radius: $border-md;
   display: flex;
-  padding: 4px;
+  padding: $pd-xxs;
   cursor: pointer;
 
-  img {
+  .menu_image {
     width: 36px;
     height: 36px;
   }

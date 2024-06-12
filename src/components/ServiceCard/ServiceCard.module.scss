@@ -8,16 +8,12 @@
     border-radius: $border-md;
     margin-bottom: $mr-lg;
     
-    h3 {
+    &_title,
+    &_description {
         margin-bottom: $mr-lg;
     }
 
-    p {
-        color: $info;
-        margin-bottom: $mr-lg;
-    }
-
-    a {
+    &_link {
         max-width: fit-content;
     }
 }

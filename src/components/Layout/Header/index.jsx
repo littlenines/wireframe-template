@@ -9,7 +9,7 @@ const Header = () => {
         <div className={style.navigation}>
           <img src="img/default-img.svg" className={style.logo} alt="logo" />
           <div className={style.menu}>
-            <img src="icons/menu.svg" alt="menu" />
+            <img className={style.menu_image} src="icons/menu.svg" alt="menu" />
           </div>
         </div>
         <Button />

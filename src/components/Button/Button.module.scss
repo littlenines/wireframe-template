@@ -1,24 +1,24 @@
 @use "src/style/variables" as *;
 
 .button {
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 1.55;
+    font-size: $font-sm;
+    font-weight: $font-bold;
+    line-height: $line-md;
   }
 
   .small {
-    border-radius: 24px;
-    padding: 8px 16px;
+    border-radius: $border-xl;
+    padding: $pd-xs $pd-sm;
   }
 
   .medium {
-    border-radius: 24px;
-    padding: 8px 80px;
+    border-radius: $border-xl;
+    padding: $pd-xs $pd-xxl;
   }
   
   .large {
-    border-radius: 30px;
-    padding: 16px 80px;
+    border-radius: $border-xxl;
+    padding: $pd-sm $pd-xxl;
   }
   
   .highlight_button {

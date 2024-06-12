@@ -16,7 +16,7 @@ const Hero = (props) => {
         <h1 className={`${style.text_content} heading_typography`}>
           {title}
         </h1>
-        <p className={`${style.text_content} section_typography barely-visible`}>
+        <p className={`${style.text_content} section_typography barely_visible`}>
           {description}
         </p>
         <Button size="large" />

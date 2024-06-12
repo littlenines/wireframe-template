@@ -6,9 +6,9 @@ const ServiceCard = (props) => {
 
   return (
     <div className={style.service_card}>
-      {title && <h3 className='card_heading_typography'>{title}</h3>}
-      {description && <p className='card_text_typography'>{description}</p>}
-      {link && <a href={link} className='anchor_typography'>{linkTitle}</a>}
+      {title && <h3 className={`${style.service_card_title} card_heading_typography`}>{title}</h3>}
+      {description && <p className={`${style.service_card_description} card_text_typography barely_visible`}>{description}</p>}
+      {link && <a href={link} className={`${style.service_card_link} anchor_typography`}>{linkTitle}</a>}
     </div>
   )
 }

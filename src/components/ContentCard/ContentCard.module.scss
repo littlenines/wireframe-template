@@ -14,15 +14,15 @@
   background-size: 48px;
 
   &.video_poster {
-    background-image: url('icons/play-circle.svg');
+    background-image: url("icons/play-circle.svg");
   }
 
-  video {
+  .media_video {
     height: 100%;
     width: 100%;
   }
 
-  img {
+  .media_image {
     height: inherit;
     width: 100%;
     object-fit: cover;
@@ -32,17 +32,17 @@
 .content {
   padding: 0 $pd-md $pd-md;
 
-  h3 {
+  .content_title {
     margin-bottom: $mr-md;
   }
 }
 
 .description {
-  p:not(:last-child) {
+  .description_text:not(:last-child) {
     margin-bottom: $mr-xs;
   }
 
-  p:last-child {
+  .description_text:last-child {
     margin-bottom: $mr-md;
   }
 }
@@ -58,7 +58,7 @@
 .actions {
   display: flex;
 
-  img {
+  .actions_image {
     margin-right: $mr-xs;
   }
 
