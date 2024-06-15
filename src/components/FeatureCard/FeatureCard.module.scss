@@ -15,14 +15,14 @@
     color: $info;
 }
 
-@media(min-width: $sm) {
-    .card {
-        width: 70%;
-    }
-}
-
 @media(min-width: $md) {
     .card {
         margin-bottom: $mr-lg;
+    }
+}
+
+@media(min-width: $lg) {
+    .card {
+        width: 70%;
     }
 }
