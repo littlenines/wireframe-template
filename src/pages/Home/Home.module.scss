@@ -46,11 +46,20 @@
     .feature_cards {
         justify-items: center;
     }
+
+    .service_cards {
+        justify-items: center;
+    }
 }
 
 @media(min-width: 768px) {
     .feature_cards {
         grid-template-columns:repeat(3, 1fr);
+    }
+
+    .service_cards {
+        grid-template-columns:repeat(3, 1fr);
+        gap: 40px;
     }
 }
 

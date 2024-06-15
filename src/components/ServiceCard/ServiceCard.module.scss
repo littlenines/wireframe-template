@@ -17,3 +17,15 @@
         max-width: fit-content;
     }
 }
+
+@media(min-width: $sm) {
+    .service_card {
+        width: 65%;
+    }
+}
+
+@media(min-width: $md) {
+    .service_card {
+        width: unset;
+    }
+}
