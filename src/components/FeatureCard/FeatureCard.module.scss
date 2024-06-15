@@ -14,3 +14,16 @@
 .card_description {
     color: $info;
 }
+
+@media(min-width: $sm) {
+    .card {
+        width: 70%;
+    }
+}
+
+@media(min-width: $md) {
+    .card {
+        margin-bottom: $mr-lg;
+        width: 30%;
+    }
+}
