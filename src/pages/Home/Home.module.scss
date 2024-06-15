@@ -63,6 +63,12 @@
     }
 }
 
+@media(min-width: 991px) {
+    .team_cards {
+        justify-content: space-between;
+    }
+}
+
 @media(min-width: 1024px) {
 
     // our story
