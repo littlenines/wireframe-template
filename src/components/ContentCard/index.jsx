@@ -3,7 +3,7 @@ import style from './ContentCard.module.scss';
 
 const ContentCard = (props) => {
   const {
-    setClass,
+    setClass = '',
     videoSrc = '',
     imageSrc = '',
     title,
@@ -13,7 +13,7 @@ const ContentCard = (props) => {
   } = props;
   return (
     <div className={`${style.content_card} ${setClass ?? ''}`} {...props}>
-      <div className={`${style.media} ${style.video_poster}`}>
+      <div className={`${style.media} ${!imageSrc ? style.video_poster : ''} ${imageSrc && style.image_poster}`}>
         {videoSrc && (
           <video className={style.media_video} controls>
             <source src={videoSrc} type="video/mp4" />
@@ -22,7 +22,7 @@ const ContentCard = (props) => {
         {imageSrc && <img className={style.media_image} src={imageSrc} alt="card image" />}
       </div>
       <div className={style.content}>
-        <h3 className={`${style.content_title} card_heading_typography`}>{title}</h3>
+        <h3 className={`${style.content_title} ${!imageSrc ? 'card_heading_typography' : 'card_small_heading_typography'}`}>{title}</h3>
         <div className={style.description}>
           {description.length > 0 &&
             description.map((item, index) => (

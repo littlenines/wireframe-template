@@ -154,6 +154,15 @@ select {
   line-height: $line-md;
 }
 
+.card_small_heading_typography {
+  font-size: $font-sm;
+  font-family: $family-base;
+  font-weight: $font-bold;
+  line-height: $line-md;
+  text-transform: none;
+  text-decoration: none;
+}
+
 .big_heading_typography {
   font-size: $font-lg;
   font-family: $family-primary;

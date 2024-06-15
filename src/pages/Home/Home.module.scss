@@ -37,9 +37,9 @@
     align-items: center;
 }
 
-@media(min-width: 479px) {
+@media(min-width: $sm) {
     .our_story_images {
-        grid-template-columns:repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 24px;
     }
 
@@ -52,13 +52,13 @@
     }
 }
 
-@media(min-width: 768px) {
+@media(min-width: $md) {
     .feature_cards {
-        grid-template-columns:repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .service_cards {
-        grid-template-columns:repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 40px;
     }
 
@@ -68,20 +68,34 @@
     }
 }
 
-@media(min-width: 991px) {
+@media(min-width: $lg) {
     .team_cards {
         justify-content: space-between;
     }
-}
-
-@media(min-width: 1024px) {
 
     // our story
-    .our_story { // TODO: Fix for desktop version
+    .our_story {
         display: flex;
-    }
+        align-items: flex-start;
 
-    .our_story_video {
-        margin-right: $mr-lg;
+        .our_story_video {
+            margin-bottom: unset;
+            margin-right: $mr-lg;
+            width: 50%;
+        }
+
+        .our_story_images {
+            column-gap: 16px;
+            width: 50%;
+        }
+    }
+}
+
+@media(min-width: $xl) {
+     // our story
+     .our_story {
+        .our_story_images {
+            column-gap: 32px;
+        }
     }
 }
