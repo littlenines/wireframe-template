@@ -42,3 +42,15 @@
     color: $light;
     border: none;
 }
+
+@media(min-width: $md) {
+    .form_card {
+        width: 65%;
+    }
+}
+
+@media(min-width: $lg) {
+    .form_card {
+        width: 50%;
+    }
+}
