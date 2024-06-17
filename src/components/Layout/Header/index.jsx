@@ -13,7 +13,7 @@ const Header = () => {
   
   return (
     <header className={style.header}>
-      <div className={`${style.tabs} container`}>
+      <div className={`${style.tabs} container max-content`}>
         <div className={style.navigation}>
           <img src="img/default-img.svg" className={style.logo} alt="logo" />
           <div className={style.menu}>
@@ -21,7 +21,7 @@ const Header = () => {
           </div>
           <Tabs setClass={style.menu_tabs} tabs={tabsArray} />
         </div>
-        <Button />
+        <Button className='anchor_typography' />
       </div>
     </header>
   )

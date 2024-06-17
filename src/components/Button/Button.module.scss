@@ -1,11 +1,5 @@
 @use "src/style/variables" as *;
 
-.button {
-    font-size: $font-sm;
-    font-weight: $font-bold;
-    line-height: $line-md;
-  }
-
   .small {
     border-radius: $border-xl;
     padding: $pd-xs $pd-sm;

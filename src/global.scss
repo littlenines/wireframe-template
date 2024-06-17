@@ -124,6 +124,11 @@ select {
   padding: 40px 24px;
 }
 
+.max-content {
+  max-width: 1414px;
+  margin: 0 auto;
+}
+
 // 4.Typography
 .heading_typography {
   font-size: $font-xl;

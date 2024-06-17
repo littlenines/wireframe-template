@@ -31,3 +31,14 @@
         margin: 0 auto;
     }
 }
+
+@media(min-width: $xl) {
+    .hero {
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
+
+    .content {
+        width: 50%;
+    }
+}
