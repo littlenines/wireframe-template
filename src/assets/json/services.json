@@ -1,20 +1,25 @@
-[
-  {
-    "id": 0,
-    "title": "Resources",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. ",
-    "link": "https://google.com"
-  },
-  {
-    "id": 1,
-    "title": "Community",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. ",
-    "link": "https://google.com"
-  },
-  {
-    "id": 2,
-    "title": "Newsroom",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. ",
-    "link": "https://google.com"
-  }
-]
+{
+  "id": "4fb2c8d648a3",
+  "title": "More things to explore",
+  "description": "Lorme ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.",
+  "content": [
+    {
+      "id": "0edd8d3b",
+      "title": "Resources",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. ",
+      "link": "https://google.com"
+    },
+    {
+      "id": "1a7def9d",
+      "title": "Community",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. ",
+      "link": "https://google.com"
+    },
+    {
+      "id": "93118bde",
+      "title": "Newsroom",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. ",
+      "link": "https://google.com"
+    }
+  ]
+}

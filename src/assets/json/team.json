@@ -1,32 +1,37 @@
-[
-    {
-        "id": 0,
-        "name": "John",
-        "position": "Position",
-        "image": ""
-    },
-    {
-        "id": 1,
-        "name": "Megan",
-        "position": "Position",
-        "image": ""
-    },
-    {
-        "id": 2,
-        "name": "Alex",
-        "position": "Position",
-        "image": ""
-    },
-    {
-        "id": 3,
-        "name": "Sabrina",
-        "position": "Position",
-        "image": ""
-    },
-    {
-        "id": 4,
-        "name": "Ben",
-        "position": "Position",
-        "image": ""
-    }
-]
+{
+    "id": "cf366565d6bc",
+    "title": "Meet the Team",
+    "description": "Lorme ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.",
+    "content": [
+        {
+            "id": "26f0d04e",
+            "name": "John",
+            "position": "Position",
+            "image": ""
+        },
+        {
+            "id": "7433a5c4",
+            "name": "Megan",
+            "position": "Position",
+            "image": ""
+        },
+        {
+            "id": "11bfb33b",
+            "name": "Alex",
+            "position": "Position",
+            "image": ""
+        },
+        {
+            "id": "a2a26560",
+            "name": "Sabrina",
+            "position": "Position",
+            "image": ""
+        },
+        {
+            "id": "1b5f1b6d",
+            "name": "Ben",
+            "position": "Position",
+            "image": ""
+        }
+    ]
+}

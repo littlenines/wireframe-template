@@ -1,0 +1,37 @@
+{
+    "id": "931ec29f3c40",
+    "title": "Our story",
+    "description": "Lorme ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.",
+    "content_videos": [
+        {
+            "id": "196f57a1",
+            "title": "This text is the name of the article. Lorem ipsum dolor sit metsed do eiusm od tempor.",
+            "description": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+                "Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+            ]
+        }
+    ],
+    "content_images": [
+        {
+            "id": "b2e238cd",
+            "title": "This text is the name of the article. Lorem ipsum dolor sit metsed do eiusm od tempor.",
+            "src": "img/default-img.svg"
+        },
+        {
+            "id": "f614163c",
+            "title": "This text is the name of the article. Lorem ipsum dolor sit metsed do eiusm od tempor.",
+            "src": "img/default-img.svg"
+        },
+        {
+            "id": "ea29a115",
+            "title": "This text is the name of the article. Lorem ipsum dolor sit metsed do eiusm od tempor.",
+            "src": "img/default-img.svg"
+        },
+        {
+            "id": "13f9daca",
+            "title": "This text is the name of the article. Lorem ipsum dolor sit metsed do eiusm od tempor.",
+            "src": "img/default-img.svg"
+        }
+    ]
+}

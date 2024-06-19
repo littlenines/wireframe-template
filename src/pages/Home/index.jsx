@@ -1,6 +1,7 @@
 import { lazy } from 'react';
 
-const Hero = lazy(() => import('src/components/Hero'));
+import Hero from 'src/components/Hero';
+
 const Section = lazy(() => import('src/components/Section'));
 const FeatureCard = lazy(() => import('src/components/FeatureCard'));
 const ServiceCard = lazy(() => import('src/components/ServiceCard'));
@@ -9,35 +10,25 @@ const ContentCard = lazy(() => import('src/components/ContentCard'));
 const FormCard = lazy(() => import('src/components/FormCard'));
 const Info = lazy(() => import('src/components/Info'));
 
+import hero from 'src/assets/json/hero.json';
 import features from 'src/assets/json/features.json';
 import services from 'src/assets/json/services.json';
+import ourStory from 'src/assets/json/ourStory.json';
 import team from 'src/assets/json/team.json';
+import contact from 'src/assets/json/contact.json';
+
 import style from './Home.module.scss';
 
 const Home = () => {
-  const contentDescription = [
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-    'Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-  ];
-
   return (
     <main>
       {/* HERO */}
-      <Hero
-        title="Tell the whole world about your ideea"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent libero. Sed cursus ante dapibus diam.c Sed nisi.
-            Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
-            Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
-            massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
-            sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos."
-      />
+      <Hero title={hero.title} description={hero.description} />
 
       {/* FEATURES */}
-      <Section title="Which are the greatest things about it?">
+      <Section title={features.title}>
         <div className={style.feature_cards}>
-          {features.map((feature) => (
+          {features.content.map((feature) => (
             <FeatureCard
               key={feature.id}
               title={feature.title}
@@ -48,12 +39,9 @@ const Home = () => {
       </Section>
 
       {/* SERVICES */}
-      <Section
-        title="More things to explore"
-        description="Lorme ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero."
-      >
+      <Section title={services.title} description={services.description}>
         <div className={style.service_cards}>
-          {services.map((service) => (
+          {services.content.map((service) => (
             <ServiceCard
               key={service.id}
               title={service.title}
@@ -65,12 +53,9 @@ const Home = () => {
       </Section>
 
       {/* TEAM */}
-      <Section
-        title="Meet the Team"
-        description="Lorme ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero."
-      >
+      <Section title={team.title} description={team.description}>
         <div className={style.team_cards}>
-          {team.map((member) => (
+          {team.content.map((member) => (
             <TeamCard
               key={member.id}
               name={member.name}
@@ -81,39 +66,30 @@ const Home = () => {
       </Section>
 
       {/* OUR STORY */}
-      <Section
-        title="Our story"
-        description="Lorme ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero."
-      >
+      <Section title={ourStory.title} description={ourStory.description}>
         <div className={style.our_story}>
-          <ContentCard
-            setClass={style.our_story_video}
-            title="This text is the name of the article. Lorem ipsum dolor sit metsed do eiusm od tempor."
-            description={contentDescription}
-          />
+          {ourStory.content_videos.map((video) => {
+            <ContentCard
+              key={video.id}
+              title={video.title}
+              description={video.description}
+              setClass={style.our_story_video}
+            />;
+          })}
           <div className={style.our_story_images}>
-            <ContentCard
-              title="This text is the name of the article. Lorem ipsum dolor sit metsed ..."
-              imageSrc="img/default-img.svg"
-            />
-            <ContentCard
-              title="This text is the name of the article. Lorem ipsum dolor sit metsed ..."
-              imageSrc="img/default-img.svg"
-            />
-            <ContentCard
-              title="This text is the name of the article. Lorem ipsum dolor sit metsed ..."
-              imageSrc="img/default-img.svg"
-            />
-            <ContentCard
-              title="This text is the name of the article. Lorem ipsum dolor sit metsed ..."
-              imageSrc="img/default-img.svg"
-            />
+            {ourStory.content_images.map((image) => {
+              <ContentCard
+                key={image.id}
+                title={image.title}
+                imageSrc={image.src}
+              />;
+            })}
           </div>
         </div>
       </Section>
-      
+
       {/* CONTACT US */}
-      <Section title="Get in touch">
+      <Section title={contact.title}>
         <div className={style.contact_us}>
           <FormCard />
           <Info />

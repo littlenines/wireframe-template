@@ -15,7 +15,7 @@ const Header = () => {
     <header className={style.header}>
       <div className={`${style.tabs} container max-content`}>
         <div className={style.navigation}>
-          <img src="img/default-img.svg" className={style.logo} alt="logo" />
+          <img src="img/default-img.svg" className={style.logo} width={50} height={50} alt="logo" />
           <div className={style.menu}>
             <img className={style.menu_image} src="icons/menu.svg" alt="menu" />
           </div>
