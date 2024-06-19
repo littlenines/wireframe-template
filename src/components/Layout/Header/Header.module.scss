@@ -43,6 +43,16 @@
   display: none;
 }
 
+@media(min-width: $sm) {
+  .header {
+    .header_button {
+      font-size: $font-sm;
+      padding: $pd-xs $pd-xl;
+      border: 1px solid $dark;
+    }
+  }
+} 
+
 @media(min-width: $md) {
   .menu {
     display: none;

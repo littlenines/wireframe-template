@@ -21,7 +21,7 @@ const Header = () => {
           </div>
           <Tabs setClass={style.menu_tabs} tabs={tabsArray} />
         </div>
-        <Button className='anchor_typography' />
+        <Button className='anchor_typography' buttonClassName={style.header_button} />
       </div>
     </header>
   )

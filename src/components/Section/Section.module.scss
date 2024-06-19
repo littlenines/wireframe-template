@@ -10,3 +10,10 @@
     color: $info;
     margin-bottom: $mr-xl;
 }
+
+@media(min-width: $sm) {
+    .section_header {
+        width: 45%;
+        margin: 0 auto;
+    }
+}
