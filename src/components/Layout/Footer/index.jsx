@@ -1,13 +1,19 @@
 import style from './Footer.module.scss'
 
 const Footer = () => {
+  const socials = [
+    {src: 'icons/twitter.svg', alt: 'twitter'},
+    {src: 'icons/facebook2.svg', alt: 'facebook'},
+    {src: 'icons/instagram.svg', alt: 'instagram'},
+  ]
+  
   return (
     <footer className={style.footer}>
       <div className='max-content'>
         <div className={style.footer_socials}>
-          <img src="icons/twitter.svg" width={24} height={24} loading='lazy' alt="twitter" />
-          <img src="icons/facebook2.svg" width={24} height={24} loading='lazy' alt="facebook" />
-          <img src="icons/instagram.svg" width={24} height={24} loading='lazy' alt="instagram" />
+          {socials.map(social => 
+            <img key={social.alt} src={social.src} width={24} height={24} loading='lazy' alt={social.alt} />)
+          }
         </div>
         <div className={style.footer_copyright}>
           <img src="icons/copyright.svg" width={24} height={24} loading='lazy' alt="copyright" />
