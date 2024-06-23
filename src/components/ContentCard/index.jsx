@@ -13,20 +13,27 @@ const ContentCard = (props) => {
   } = props;
   return (
     <div className={`${style.content_card} ${setClass ?? ''}`} {...props}>
-      <div className={`${style.media} ${!imageSrc ? style.video_poster : ''} ${imageSrc && style.image_poster}`}>
+      <div 
+        className={`
+          ${style.content_card_media}
+          ${!imageSrc ? style.content_card_video__poster : ''} 
+          ${imageSrc && style.content_card_image__poster}`}
+      >
         {videoSrc && (
-          <video className={style.media_video} controls>
+          <video className={style.content_card_media__video} controls>
             <source src={videoSrc} type="video/mp4" />
           </video>
         )}
-        {imageSrc && <img className={style.media_image} src={imageSrc} alt="card image" />}
+        {imageSrc && <img className={style.content_card_media__image} src={imageSrc} alt="card image" />}
       </div>
-      <div className={style.content}>
-        <h3 className={`${style.content_title} ${!imageSrc ? 'card_heading_typography' : 'card_small_heading_typography'}`}>{title}</h3>
-        <div className={style.description}>
+      <div className={style.content_card_info}>
+        <h3 className={`${style.content_card_info_title} ${!imageSrc ? 'card_heading_typography' : 'card_small_heading_typography'}`}>
+          {title}
+        </h3>
+        <div className={style.content_card_info_description}>
           {description.length > 0 &&
             description.map((item, index) => (
-              <p key={index} className={`${style.description_text} card_text_typography`}>
+              <p key={index} className={`${style.content_card_info_description__text} card_text_typography`}>
                 {item}
               </p>
             ))}
@@ -37,19 +44,19 @@ const ContentCard = (props) => {
       </div>
       <div className={style.content_card_footer}>
         <p className="card_text_typography">12 Apr 2021</p>
-        <div className={style.actions}>
-          <div className={style.actions_comments}>
+        <div className={style.content_card_actions}>
+          <div className={style.content_card_actions_comments}>
             <img
               src="icons/message-circle.svg"
               width={24}
               height={24}
-              className={style.actions_image}
+              className={style.content_card_actions_image}
               alt="comments"
             />
             <p className="card_text_typography">123</p>
           </div>
-          <div className={style.actions_views}>
-            <img className={style.actions_image} src="icons/eye.svg" width={24} height={24} alt="view" />
+          <div className={style.content_card_actions_views}>
+            <img className={style.content_card_actions_image} src="icons/eye.svg" width={24} height={24} alt="view" />
             <p className="card_text_typography">4567</p>
           </div>
         </div>

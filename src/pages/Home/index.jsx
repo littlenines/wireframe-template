@@ -68,22 +68,22 @@ const Home = () => {
       {/* OUR STORY */}
       <Section title={ourStory.title} description={ourStory.description}>
         <div className={style.our_story}>
-          {ourStory.content_videos.map((video) => {
+          {ourStory.content_videos.map((video) => 
             <ContentCard
               key={video.id}
               title={video.title}
               description={video.description}
               setClass={style.our_story_video}
-            />;
-          })}
+            />
+          )}
           <div className={style.our_story_images}>
-            {ourStory.content_images.map((image) => {
+            {ourStory.content_images.map((image) => 
               <ContentCard
                 key={image.id}
                 title={image.title}
                 imageSrc={image.src}
-              />;
-            })}
+              />
+            )}
           </div>
         </div>
       </Section>
