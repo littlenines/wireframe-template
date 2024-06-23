@@ -3,10 +3,10 @@
 .feature_card {
     display: flex;
     align-items: flex-start;
-    margin-bottom: $mr-md;
     padding: $pd-sm;
 }
 
+.feature_card,
 .feature_card_title {
     margin-bottom: $mr-md;
 }

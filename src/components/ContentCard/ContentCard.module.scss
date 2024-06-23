@@ -17,10 +17,11 @@
 
   &.content_card_video__poster {
     background-image: url("icons/play-circle.svg");
-    border-radius: 6px 6px 0 0;
   }
 
-  &.content_card_image__poster {
+  &.content_card_video__poster,
+  &.content_card_image__poster,
+  &__image {
     border-radius: 6px 6px 0 0;
   }
 
@@ -33,7 +34,6 @@
     height: inherit;
     width: 100%;
     object-fit: cover;
-    border-radius: 6px 6px 0 0;
   }
 }
 
