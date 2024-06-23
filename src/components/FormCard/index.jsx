@@ -11,25 +11,25 @@ const FormCard = (props) => {
   } = props;
   return (
     <form className={style.form_card} {...props}>
-      <h2 className={`${style.title} big_heading_typography`}>{title}</h2>
+      <h2 className={`${style.form_card_title} big_heading_typography`}>{title}</h2>
       <input
         type="text"
         placeholder={textPlaceholder}
-        className={`${style.text_input} section_typography`}
+        className={`${style.form_card_text} section_typography`}
         required
       />
       <input
         type="email"
         placeholder={emailPlaceholder}
-        className={`${style.email_input} section_typography`}
+        className={`${style.form_card_email} section_typography`}
         required
       />
       <textarea
         name="message"
         placeholder={textareaPlaceholder}
-        className={`${style.textarea_input} section_typography`}
+        className={`${style.form_card_textarea} section_typography`}
       ></textarea>
-      <button type="submit" className={`${style.submit} anchor_typography`}>
+      <button type="submit" className={`${style.form_card_submit} anchor_typography`}>
         {submitText}
       </button>
     </form>

@@ -10,14 +10,14 @@
     align-self: stretch;
     border-radius: $border-lg;
 
-    .title {
+    &_title {
         margin-bottom: $mr-lg;
     }
 }
 
-.text_input,
-.email_input,
-.textarea_input {
+.form_card_text,
+.form_card_email,
+.form_card_textarea {
     width: 100%;
     padding: $pd-sm $pd-md;
     border-radius: $border-lg;
@@ -25,17 +25,17 @@
     border-color: $dark;
 }
 
-.text_input,
-.email_input {
+.form_card_text,
+.form_card_email {
     margin-bottom: $mr-sm;
 }
 
-.textarea_input {
+.form_card_textarea {
     height: 140px;
     margin-bottom: $mr-lg;
 }
 
-.submit {
+.form_card_submit {
     padding: $pd-xs $pd-xxl;
     border-radius: $border-xl;
     background-color: $dark;
