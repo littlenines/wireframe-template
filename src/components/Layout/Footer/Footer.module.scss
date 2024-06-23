@@ -5,8 +5,8 @@
 }
 
 .footer > div,
-.socials,
-.copyright {
+.footer_socials,
+.footer_copyright {
   display: flex;
 }
 
@@ -15,7 +15,7 @@
   padding: $pd-md;
 }
 
-.socials,
-.copyright {
+.footer_socials,
+.footer_copyright {
   gap: 16px;
 }
