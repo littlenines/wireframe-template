@@ -5,11 +5,11 @@ import style from './FeatureCard.module.scss'
 const FeatureCard = (props) => {
   const {showBadge = true, showTitle = true, setClass='', title, description} = props
   return (
-    <div className={`${style.card} ${setClass}`}>
+    <div className={`${style.feature_card} ${setClass}`}>
       {showBadge && <IconBadge image={props.iconImage}/>}
-      <div className={style.card_content}>
-        {showTitle && <h3 className={`card_heading_typography ${style.card_title}`}>{title}</h3>}
-        <p className={`card_text_typography ${style.card_description}`}>
+      <div>
+        {showTitle && <h3 className={`card_heading_typography ${style.feature_card_title}`}>{title}</h3>}
+        <p className={`card_text_typography ${style.feature_card_description}`}>
           {description}
         </p>
       </div>

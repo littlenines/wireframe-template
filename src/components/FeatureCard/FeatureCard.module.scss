@@ -1,28 +1,28 @@
 @use "src/style/variables" as *;
 
-.card {
+.feature_card {
     display: flex;
     align-items: flex-start;
     margin-bottom: $mr-md;
     padding: $pd-sm;
 }
 
-.card_title {
+.feature_card_title {
     margin-bottom: $mr-md;
 }
 
-.card_description {
+.feature_card_description {
     color: $info;
 }
 
 @media(min-width: $md) {
-    .card {
+    .feature_card {
         margin-bottom: $mr-lg;
     }
 }
 
 @media(min-width: $lg) {
-    .card {
+    .feature_card {
         width: 70%;
     }
 }
