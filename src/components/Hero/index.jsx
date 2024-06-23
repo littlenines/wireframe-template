@@ -12,11 +12,11 @@ const Hero = (props) => {
 `
   return (
     <section className={style.hero} css={hero_style} {...props}>
-      <div className={`container ${style.content} max-content`}>
-        <h1 className={`${style.text_content} heading_typography`}>
+      <div className={`container ${style.hero_content} max-content`}>
+        <h1 className={`${style.hero_content_text} heading_typography`}>
           {title}
         </h1>
-        <p className={`${style.text_content} section_typography barely_visible`}>
+        <p className={`${style.hero_content_text} section_typography barely_visible`}>
           {description}
         </p>
         <Button size="large" className='anchor_typography' />
