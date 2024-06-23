@@ -6,7 +6,7 @@ const IconBadge = (props) => {
 
   return (
     <div className={`${style.icon} ${setClass}`} {...props}>
-      <img src={image} width={36} height={36} alt="lightbulb" loading='lazy'/>
+      <img src={image} className={style.icon_image} width={36} height={36} alt="lightbulb" loading='lazy'/>
     </div>
   )
 }

@@ -5,4 +5,8 @@
     border-radius: $border-circle;
     padding: $pd-xs;
     margin-right: $mr-md;
+
+    &_image {
+        max-width: 36px;
+    }
 }

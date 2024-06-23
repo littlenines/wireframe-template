@@ -5,9 +5,9 @@ const Section = (props) => {
   return (
     <section {...props}>
       <div className="wrapper max-content">
-        <div className={style.section_header}>
-          <h2 className={`heading_typography ${style.title}`}>{props.title}</h2>
-          {props.description && <p className={`section_typography ${style.description}`}>{props.description}</p>}
+        <div className={style.section}>
+          <h2 className={`heading_typography ${style.section_title}`}>{props.title}</h2>
+          {props.description && <p className={`section_typography ${style.section_description}`}>{props.description}</p>}
         </div>
         {props.children}
       </div>

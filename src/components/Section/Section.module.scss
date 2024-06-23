@@ -1,18 +1,18 @@
 @use "src/style/variables" as *;
 
-.title {
+.section_title {
     text-align: center;
     margin-bottom: $mr-lg;
 }
 
-.description {
+.section_description {
     text-align: center;
     color: $info;
     margin-bottom: $mr-xl;
 }
 
 @media(min-width: $xl) {
-    .section_header {
+    .section {
         width: 45%;
         margin: 0 auto;
     }
