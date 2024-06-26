@@ -6,13 +6,7 @@
     padding: $pd-lg;
     background-color: $background-fill;
     border-radius: $border-md;
-    margin-bottom: $mr-lg;
     
-    &_title,
-    &_description {
-        margin-bottom: $mr-lg;
-    }
-
     &_link {
         max-width: fit-content;
     }

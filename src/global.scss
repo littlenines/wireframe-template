@@ -4,6 +4,7 @@
 - 3.Containers
 - 4.Typography
 - 5.Colors
+- 6.Margin
 */
 
 // 1.Imports
@@ -190,4 +191,25 @@ select {
 // 5.Colors
 .barely_visible {
   color: $info;
+}
+
+// 6.Margin
+.mb-40 {
+  margin-bottom: $mr-xl;
+}
+
+.mb-32 {
+  margin-bottom: $mr-lg;
+}
+
+.mb-24 {
+  margin-bottom: $mr-md;
+}
+
+.mb-16 {
+  margin-bottom: $mr-sm;
+}
+
+.mb-8 {
+  margin-bottom: $mr-xs;
 }

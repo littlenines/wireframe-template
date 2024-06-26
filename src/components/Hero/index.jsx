@@ -7,16 +7,15 @@ import style from './Hero.module.scss'
 
 const Hero = (props) => {
   const { title, description, image='img/default-img.svg' } = props
-  const hero_style = css`
-  background-image: url(${image});
-`
+  const hero_style = css`background-image: url(${image});`
+
   return (
     <section className={style.hero} css={hero_style} {...props}>
       <div className={`container ${style.hero_content} max-content`}>
-        <h1 className={`${style.hero_content_text} heading_typography`}>
+        <h1 className='mb-40 heading_typography'>
           {title}
         </h1>
-        <p className={`${style.hero_content_text} section_typography barely_visible`}>
+        <p className='mb-40 section_typography barely_visible'>
           {description}
         </p>
         <Button size="large" className='anchor_typography' />

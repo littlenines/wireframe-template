@@ -9,10 +9,6 @@
     align-items: center;
     align-self: stretch;
     border-radius: $border-lg;
-
-    &_title {
-        margin-bottom: $mr-lg;
-    }
 }
 
 .form_card_text,
@@ -25,14 +21,8 @@
     border-color: $dark;
 }
 
-.form_card_text,
-.form_card_email {
-    margin-bottom: $mr-sm;
-}
-
 .form_card_textarea {
     height: 140px;
-    margin-bottom: $mr-lg;
 }
 
 .form_card_submit {
