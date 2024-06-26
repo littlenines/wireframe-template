@@ -10,9 +10,10 @@ const ContentCard = (props) => {
     description = [],
     link,
     linkTitle = 'Read More',
+    ...rest
   } = props;
   return (
-    <div className={`${style.content_card} ${setClass ?? ''}`} {...props}>
+    <div className={`${style.content_card} ${setClass ?? ''}`} {...rest}>
       <div 
         className={`
           ${style.content_card_media}

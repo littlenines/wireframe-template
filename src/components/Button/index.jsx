@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import style from './Button.module.scss';
 
 const Button = (props) => {
-  const {size = 'small', text = 'Start now', buttonClassName=''} = props
+  const {size = 'small', text = 'Start now', buttonClassName='', ...rest} = props
   return (
-    <div {...props}>
+    <div {...rest}>
       <button
         className={`
             ${style.highlight_button} 
