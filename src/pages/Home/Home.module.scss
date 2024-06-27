@@ -1,96 +1,112 @@
 @use "src/style/variables" as *;
 
-// FEATURES
+/* 
+- 1.Features
+- 2.Services
+- 3.Team
+- 4.Our Story
+- 5.Contact us
+- 6.Media Phone landscape
+- 7.Media Tablet
+- 8.Media Laptop
+- 9.Media Desktop
+*/
+
+// 1.Features
 .feature_cards {
-    display: grid;
-    align-items: flex-start;
+  display: grid;
+  align-items: flex-start;
 }
 
-// SERVICES
+// 2.Services
 .service_cards {
-    display: grid;
+  display: grid;
 }
 
-// TEAM
+// 3.Team
 .team_cards {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-// OUR Story
+// 4.Our Story
 .our_story_video {
-    margin-bottom: $mr-lg;
+  margin-bottom: $mr-lg;
 }
 
 .our_story_images {
-    display: grid;
-    row-gap: 32px;
+  display: grid;
+  row-gap: 32px;
 }
 
-// CONTACT US
+// 5.Contact us
 .contact_us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+// 6.Media Phone landscape
+@media (min-width: $sm) {
+  .our_story_images {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+  }
+
+  .feature_cards,
+  .service_cards {
+    justify-items: center;
+  }
+}
+
+// 7.Media Tablet
+@media (min-width: $md) {
+  .feature_cards,
+  .service_cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service_cards {
+    gap: 40px;
+  }
+
+  .contact_us {
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+// 8.Media Laptop
+@media (min-width: $lg) {
+  .team_cards {
+    justify-content: space-between;
+  }
+
+  .our_story {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-}
+    align-items: flex-start;
 
-@media(min-width: $sm) {
+    .our_story_video {
+      margin-bottom: unset;
+      margin-right: $mr-lg;
+      width: 50%;
+    }
+
     .our_story_images {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 24px;
+      column-gap: 16px;
+      width: 50%;
     }
-
-    .feature_cards,
-    .service_cards {
-        justify-items: center;
-    }
+  }
 }
 
-@media(min-width: $md) {
-    .feature_cards,
-    .service_cards {
-        grid-template-columns: repeat(3, 1fr);
+// 9.Media Desktop
+@media (min-width: $xl) {
+  .our_story {
+    .our_story_images {
+      column-gap: 32px;
     }
-
-    .service_cards {
-        gap: 40px;
-    }
-
-    .contact_us {
-        justify-content: center;
-        flex-direction: row;
-    }
-}
-
-@media(min-width: $lg) {
-    .team_cards {
-        justify-content: space-between;
-    }
-
-    .our_story {
-        display: flex;
-        align-items: flex-start;
-
-        .our_story_video {
-            margin-bottom: unset;
-            margin-right: $mr-lg;
-            width: 50%;
-        }
-
-        .our_story_images {
-            column-gap: 16px;
-            width: 50%;
-        }
-    }
-}
-
-@media(min-width: $xl) {
-     .our_story {
-        .our_story_images {
-            column-gap: 32px;
-        }
-    }
+  }
 }
