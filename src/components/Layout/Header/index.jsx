@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-const Button = lazy(() => import('src/components/Button'));
+import Button from 'src/components/Button';
 const Tabs = lazy(() => import('../Tabs'))
 import style from './Header.module.scss';
 
