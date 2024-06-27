@@ -9,7 +9,7 @@ const FeatureCard = (props) => {
       {showBadge && <IconBadge image={props.iconImage}/>}
       <div>
         {showTitle && <h3 className='card_heading_typography mb-24'>{title}</h3>}
-        <p className={`card_text_typography ${style.feature_card_description}`}>
+        <p className='card_text_typography barely_visible'>
           {description}
         </p>
       </div>
