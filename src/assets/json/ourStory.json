@@ -9,29 +9,44 @@
             "description": [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
                 "Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
-            ]
+            ],
+            "date": "12 Apr 2021",
+            "comments": 123,
+            "views": 4567
         }
     ],
     "content_images": [
         {
             "id": "b2e238cd",
             "title": "This text is the name of the article. Lorem ipsum dolor sit metsed do eiusm od tempor.",
-            "src": "img/default-img.svg"
+            "src": "img/default-img.svg",
+            "date": "12 Apr 2021",
+            "comments": 123,
+            "views": 4567
         },
         {
             "id": "f614163c",
             "title": "This text is the name of the article. Lorem ipsum dolor sit metsed do eiusm od tempor.",
-            "src": "img/default-img.svg"
+            "src": "img/default-img.svg",
+            "date": "12 Apr 2021",
+            "comments": 123,
+            "views": 4567
         },
         {
             "id": "ea29a115",
             "title": "This text is the name of the article. Lorem ipsum dolor sit metsed do eiusm od tempor.",
-            "src": "img/default-img.svg"
+            "src": "img/default-img.svg",
+            "date": "12 Apr 2021",
+            "comments": 123,
+            "views": 4567
         },
         {
             "id": "13f9daca",
             "title": "This text is the name of the article. Lorem ipsum dolor sit metsed do eiusm od tempor.",
-            "src": "img/default-img.svg"
+            "src": "img/default-img.svg",
+            "date": "12 Apr 2021",
+            "comments": 123,
+            "views": 4567
         }
     ]
 }

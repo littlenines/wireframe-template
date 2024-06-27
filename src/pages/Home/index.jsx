@@ -74,6 +74,9 @@ const Home = () => {
               title={video.title}
               description={video.description}
               setClass={style.our_story_video}
+              date={video.date}
+              comments={video.comments}
+              views={video.views}
             />
           )}
           <div className={style.our_story_images}>
@@ -82,6 +85,9 @@ const Home = () => {
                 key={image.id}
                 title={image.title}
                 imageSrc={image.src}
+                date={image.date}
+                comments={image.comments}
+                views={image.views}
               />
             )}
           </div>
